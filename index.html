@@ -1,23 +1,187 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Website</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            padding: 50px;
-        }
-        h1 {
-            color: #4CAF50;
-        }
-    </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nomphelo Mpati | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+    }
+    header p {
+      font-size: 20px;
+    }
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #4CAF50;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    section h2 {
+      color: #4CAF50;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .logo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .logo-grid img {
+      width: 120px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      background: white;
+      padding: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .contact-info a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  </style>
 </head>
 <body>
-    <h1>Welcome to My GitHub Pages Website!</h1>
-    <p>Hi, I'm Nomphelo. This is a simple webpage hosted on GitHub Pages. Stay tuned for more updates!</p>
-    <p><a href="https://github.com/Phel18" target="_blank">Visit My GitHub Profile</a></p>
+
+  <header>
+    <h1>Nomphelo Mpati</h1>
+    <p>Software Developer | Tech Enthusiast | Creative Thinker</p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#experience">Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+  <h2>About Me</h2>
+  <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+    <img src="Nomphelo.jpg" alt="Profile Photo" style="width:200px; height:200px; border-radius: 50%;" />
+    <div style="flex: 1; min-width: 250px;">
+      <p>Hello! I'm a passionate software developer with a strong interest in building user-friendly digital solutions. I enjoy blending creativity and code to bring ideas to life. I’m constantly learning and eager to contribute to meaningful tech projects.</p>
+    </div>
+  </div>
+</section>
+
+
+  <section id="education">
+    <h2>Education & Achievements</h2>
+    <ul>
+      <li><strong>Diploma in Software Development</strong> — Pass with Cum Laude (Year: 2024)</li>
+      <li>AFDA — Bachelor of Arts in Film (2011)</li>
+    </ul>
+  </section>
+
+  <section id="experience">
+    <h2>Work Experience</h2>
+    <ul>
+      <li><strong>Software Developer Intern</strong> – Tech Company (2024 - Present)</li>
+      <li><strong>Freelance Marketing Consultant</strong> (2020 - 2024)</li>
+      <li><strong>Marketing Coordinator (Temp)</strong> – National Film & Video Foundation (2018 - 2019)</li>
+      <li><strong>Contracts Coordinator</strong> – Kwese Free Sports & Entertainment Channels (2016 - 2018)</li>
+      <li><strong>Marketing Coordinator (Contract)</strong> – Viacom Media Networks Africa (2013 - 2015)</li>
+    </ul>
+
+    <div class="logo-grid">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/3/36/National_Film_and_Video_Foundation_logo.svg/2560px-National_Film_and_Video_Foundation_logo.svg.png" alt="NFVF Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/2/2f/ViacomCBS_Logo.svg/2560px-ViacomCBS_Logo.svg.png" alt="Viacom Logo">
+      <img src="https://upload.wikimedia.org/wikipedia/en/thumb/c/c2/Kwes%C3%A9_Sports_logo.png/220px-Kwes%C3%A9_Sports_logo.png" alt="Kwese Logo">
+      <!-- Add more logos or replace URLs as needed -->
+    </div>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li><strong>Patient Treatment Booking App</strong> – A web app to manage surgery bookings and prescriptions.</li>
+      <li><strong>Marketing Analytics Dashboard</strong> – A visual tool for monitoring campaign KPIs.</li>
+      <li><strong>Personal Portfolio Website</strong> – This very site, built with HTML/CSS/JavaScript & hosted on GitHub Pages.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:yourname@example.com">yourname@example.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/yourprofile" target="_blank">linkedin.com/in/yourprofile</a></p>
+    <p>GitHub: <a href="https://github.com/yourusername" target="_blank">github.com/yourusername</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Your Name. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Fade-in sections on scroll
+    const sections = document.querySelectorAll("section");
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.9;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < triggerBottom) {
+          section.classList.add("show");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+
 </body>
 </html>
