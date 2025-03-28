@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Nomphelo Mpati | Portfolio</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Segoe UI', sans-serif;
+      background-color: #f9f9f9;
+      color: #333;
+      scroll-behavior: smooth;
+    }
+    header {
+      background-color: #4CAF50;
+      color: white;
+      padding: 60px 20px;
+      text-align: center;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 48px;
+    }
+    header p {
+      font-size: 20px;
+    }
+    nav {
+      background-color: #333;
+      text-align: center;
+      padding: 10px 0;
+      position: sticky;
+      top: 0;
+      z-index: 999;
+    }
+    nav a {
+      color: white;
+      text-decoration: none;
+      padding: 14px 20px;
+      display: inline-block;
+      transition: background-color 0.3s;
+    }
+    nav a:hover {
+      background-color: #4CAF50;
+    }
+    section {
+      padding: 60px 20px;
+      max-width: 1000px;
+      margin: auto;
+      opacity: 0;
+      transform: translateY(40px);
+      transition: all 0.8s ease;
+    }
+    section.show {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    section h2 {
+      color: #4CAF50;
+      margin-bottom: 20px;
+      font-size: 30px;
+    }
+    ul {
+      padding-left: 20px;
+    }
+    li {
+      margin-bottom: 10px;
+    }
+    .logo-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 20px;
+      margin-top: 20px;
+    }
+    .logo-grid img {
+      width: 120px;
+      height: auto;
+      object-fit: contain;
+      border-radius: 8px;
+      background: white;
+      padding: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+    .contact-info a {
+      color: #4CAF50;
+      text-decoration: none;
+    }
+    footer {
+      background-color: #333;
+      color: white;
+      text-align: center;
+      padding: 30px 20px;
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <h1>Nomphelo Mpati</h1>
+    <p> IT Graduate </p>
+  </header>
+
+  <nav>
+    <a href="#about">About</a>
+    <a href="#education">Education</a>
+    <a href="#projects">Projects</a>
+    <a href="#contact">Contact</a>
+  </nav>
+
+  <section id="about">
+    <h2>About Me</h2>
+    <div style="display: flex; flex-wrap: wrap; align-items: center; gap: 30px;">
+      <img src="Nomphelo.jpg" alt="Profile Photo" style="width:200px; height:200px; border-radius: 50%;" />
+      <div style="flex: 1; min-width: 250px;">
+        <p>
+          Hello! I'm Nomphelo Mpati, an IT graduate with a passion for tech project management and a keen interest in the tech industry. I hold a Diploma in Software Development, where I honed my skills in programming languages such as C#, HTML, CSS, JavaScript, and SQL. 
+          As a recent graduate, I am eager to apply my technical knowledge to real-world projects and continue growing within the industry. I have a strong foundation in project management, with an emphasis on technology solutions that enhance team collaboration and operational efficiency. My journey has equipped me with problem-solving abilities, adaptability, and the skills to bridge gaps between development and business needs. With certifications such as 'Intro to Cyber Security' from Cisco, I am committed to broadening my expertise to include areas such as cyber security, cloud computing, and data analysis.
+          I am excited to bring my passion for technology and my problem-solving mindset to a dynamic team where I can contribute to impactful projects and further develop my professional skills.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <ul style="list-style: none; padding-left: 0;">
+      <li style="margin-bottom: 20px; display: flex; align-items: center; gap: 20px;">
+        <img src="NMU LOGO.jpeg" alt="Nelson Mandela University Logo" style="width:80px; height:auto; border-radius:8px;" />
+        <div>
+          <strong>Nelson Mandela University</strong><br />
+          Diploma in Software Development – Pass with Cum Laude
+        </div>
+      </li>
+      <li style="margin-bottom: 20px; display: flex; align-items: center; gap: 20px;">
+        <img src="cisco_logo.png" alt="Cisco Logo" style="width:80px; height:auto; border-radius:8px;" />
+        <div>
+          <strong>Cisco</strong><br />
+          Intro to Cyber Security Certification
+        </div>
+      </li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Projects</h2>
+    <ul>
+      <li>
+        <strong>📁 Project Management System</strong><br>
+        A comprehensive tool designed to track and manage projects, team tasks, and progress within an organization. The system includes project timelines, task assignments, and performance tracking.<br>
+        <a href="https://www.notion.so/1c353321fb5780df809cf704b6e6a0f3?v=1c353321fb5781c49aa1000c93644f35&pvs=4" target="_blank">View Project Management System</a><br>
+        <strong>Tabs:</strong> 
+        <ul>
+          <li><a href="https://www.notion.so/Project-Plan-Tab-URL" target="_blank">Project Plan with Tasks</a></li>
+          <li><a href="https://www.notion.so/Priority-Level-Tab-URL" target="_blank">Priority Level</a></li>
+          <li><a href="https://www.notion.so/Gantt-Chart-Tab-URL" target="_blank">Gantt Chart</a></li>
+          <li><a href="https://www.notion.so/Kanban-View-Tab-URL" target="_blank">Kanban View</a></li>
+        </ul>
+      </li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:nomphelompati@gmail.com">nomphelompati@gmail.com</a></p>
+    <p>LinkedIn: <a href="https://linkedin.com/in/nomphelo-mpati-199ba1198/" target="_blank">nomphelo-mpati-199ba1198</a></p>
+  </section>
+
+  <footer>
+    <p>&copy; 2025 Nomphelo Mpati. All rights reserved.</p>
+  </footer>
+
+  <script>
+    // Fade-in sections on scroll
+    const sections = document.querySelectorAll("section");
+
+    const revealOnScroll = () => {
+      const triggerBottom = window.innerHeight * 0.9;
+      sections.forEach(section => {
+        const sectionTop = section.getBoundingClientRect().top;
+        if (sectionTop < triggerBottom) {
+          section.classList.add("show");
+        }
+      });
+    };
+
+    window.addEventListener("scroll", revealOnScroll);
+    window.addEventListener("load", revealOnScroll);
+  </script>
+
+</body>
+</html>
