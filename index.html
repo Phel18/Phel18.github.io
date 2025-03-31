@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nomphelo Mpati | Tech Project Manager</title>
+    <title>Nomphelo Mpati | Tech Project Manager | Cyber Security Enthusiast</title>
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
     <style>
         :root {
@@ -13,6 +13,7 @@
             --background-color: #F5F5F5;
             --white: #FFFFFF;
             --accent-color: #4169E1;
+            --cyber-accent: #00b894; /* Adding a cyber security themed accent color */
         }
 
         * {
@@ -188,6 +189,47 @@
             box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
 
+        /* Cyber security card with different accent color */
+        .project-card.cyber {
+            border-left: 5px solid var(--cyber-accent);
+        }
+
+        /* Skills section styling */
+        .skills-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 1rem;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .skill-badge {
+            background-color: var(--background-color);
+            padding: 0.5rem 1rem;
+            border-radius: 20px;
+            font-weight: 500;
+            font-size: 0.9rem;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .skill-badge:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 4px 8px rgba(0,0,0,0.15);
+        }
+
+        .skill-badge.pm {
+            border-left: 3px solid var(--accent-color);
+        }
+
+        .skill-badge.cyber {
+            border-left: 3px solid var(--cyber-accent);
+        }
+
+        .skill-badge.tech {
+            border-left: 3px solid var(--primary-color);
+        }
+
         /* Updated contact-info section styling */
         .contact-info {
             display: flex;
@@ -239,6 +281,11 @@
             .contact-info a {
                 justify-content: center;
             }
+
+            /* Adjust skills for mobile */
+            .skills-container {
+                justify-content: center;
+            }
         }
     </style>
 </head>
@@ -246,7 +293,7 @@
     <header>
         <div class="container">
             <h1>Nomphelo Mpati</h1>
-            <p>IT Graduate | Tech Project Management Enthusiast</p>
+            <p>IT Graduate | Tech Project Manager | Cyber Security Enthusiast</p>
         </div>
     </header>
 
@@ -256,6 +303,7 @@
             <ul>
                 <li><a href="#about">About</a></li>
                 <li><a href="#education">Education</a></li>
+                <li><a href="#skills">Skills</a></li>
                 <li><a href="#projects">Projects</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
@@ -271,9 +319,9 @@
             <div>
                 <p>I am a results-driven IT graduate with a strong foundation in software development (C#, JavaScript, SQL) and web technologies (HTML/CSS). My academic background at Nelson Mandela University, combined with hands-on experience in Agile and Waterfall methodologies, equips me to bridge the gap between technical teams and business stakeholders effectively.</p>
 
-                <p class="mt-4">Passionate about technical consulting and project coordination, I thrive in collaborative environments, applying analytical thinking to drive efficient solutions. With a keen interest in project management, I aim to implement adaptive methodologies while maintaining structured approaches for enterprise solutions.</p>
+                <p class="mt-4">Passionate about technical consulting and project coordination, I thrive in collaborative environments, applying analytical thinking to drive efficient solutions. With a keen interest in both project management and cyber security, I aim to implement adaptive methodologies while maintaining structured approaches for enterprise solutions with a security-first mindset.</p>
 
-                <p class="mt-4">A quick learner with a growth mindset, I am eager to apply my technical expertise while developing specialized project management skills through mentorship and continuous professional development.</p>
+                <p class="mt-4">A quick learner with a growth mindset, I am eager to apply my technical expertise while developing specialized project management and security skills through mentorship and continuous professional development. I'm particularly interested in how secure development practices can be integrated into project management workflows.</p>
             </div>
         </div>
     </section>
@@ -288,7 +336,7 @@
                 <div>
                     <h3>Nelson Mandela University</h3>
                     <p>Advanace Diploma in Information Technology (BTech)</p>
-                    <p>Focused on advanced technical concepts and project management methodologies</p>
+                    <p>Focused on advanced technical concepts and project management methodologies with supplementary studies in network security</p>
                 </div>
             </div>
             <div class="education-card">
@@ -297,9 +345,39 @@
                     <h3>Nelson Mandela University</h3>
                     <p>IT Diploma - Software Development</p>
                     <small>Cum Laude</small>
-                    <p>Specialized in programming fundamentals, database management, and web development</p>
+                    <p>Specialized in programming fundamentals, database management, and web development with additional coursework in cyber security fundamentals</p>
                 </div>
             </div>
+        </div>
+    </section>
+
+    <!-- New Skills Section -->
+    <section id="skills" class="section container">
+        <div class="section-header">
+            <h2>Skills & Interests</h2>
+        </div>
+        <div class="skills-container">
+            <!-- Project Management Skills -->
+            <div class="skill-badge pm">Agile Methodologies</div>
+            <div class="skill-badge pm">Scrum</div>
+            <div class="skill-badge pm">Waterfall</div>
+            <div class="skill-badge pm">Project Coordination</div>
+            <div class="skill-badge pm">Stakeholder Management</div>
+            <div class="skill-badge pm">Risk Assessment</div>
+            
+            <!-- Cyber Security Skills -->
+            <div class="skill-badge cyber">Network Security</div>
+            <div class="skill-badge cyber">Secure Development</div>
+            <div class="skill-badge cyber">Risk Analysis</div>
+            <div class="skill-badge cyber">Security Awareness</div>
+            <div class="skill-badge cyber">Vulnerability Assessment</div>
+            
+            <!-- Technical Skills -->
+            <div class="skill-badge tech">C#</div>
+            <div class="skill-badge tech">JavaScript</div>
+            <div class="skill-badge tech">SQL</div>
+            <div class="skill-badge tech">HTML/CSS</div>
+            <div class="skill-badge tech">Database Management</div>
         </div>
     </section>
 
@@ -317,6 +395,13 @@
                  <h3><i class="fas fa-chart-line"></i> Technical Consulting Dashboard</h3>
                  <p>An interactive web dashboard that simulates enterprise-level project management metrics and KPIs. This demonstration showcases my ability to visualize complex project data, track milestones, and identify potential bottlenecks through intuitive interface design. The dashboard incorporates Agile tracking components, highlighting my understanding of project management methodologies.</p>
                  <a href="https://phel18.github.io/Dashboard-Demo/" target="_blank">View Live Demo Project</a>
+            </div>
+            <!-- New Cyber Security Project -->
+            <div class="project-card cyber">
+                <h3><i class="fas fa-shield-alt"></i> Secure Development Integration</h3>
+                <p>A framework for integrating security practices into project management workflows. This conceptual model demonstrates how security checkpoints can be embedded within Agile and Waterfall methodologies to ensure secure development practices are followed throughout the project lifecycle.</p>
+                <p>Features security-focused code reviews, vulnerability scanning checkpoints, and compliance documentation tools that align with industry standards.</p>
+                <a href="#contact" target="_blank">Contact for More Information</a>
             </div>
         </div>
     </section>
