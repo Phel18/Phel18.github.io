@@ -188,10 +188,12 @@
             box-shadow: 0 6px 12px rgba(0,0,0,0.15);
         }
 
+        /* Updated contact-info section styling */
         .contact-info {
             display: flex;
             justify-content: center;
             gap: 2rem;
+            flex-wrap: wrap; /* Allow wrapping on smaller screens */
         }
 
         .contact-info a {
@@ -202,6 +204,8 @@
             gap: 0.5rem;
             font-weight: 500;
             transition: color 0.3s ease;
+            min-width: 200px; /* Set a minimum width */
+            margin-bottom: 1rem; /* Add space between wrapped items */
         }
 
         .contact-info a:hover {
@@ -223,6 +227,17 @@
 
             nav ul {
                 display: none; /* For mobile, you'd want a hamburger menu */
+            }
+            
+            /* Added media query for contact section */
+            .contact-info {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+            
+            .contact-info a {
+                justify-content: center;
             }
         }
     </style>
